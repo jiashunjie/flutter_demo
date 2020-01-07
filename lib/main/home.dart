@@ -88,8 +88,7 @@ class MyList extends StatelessWidget {
     return ListView(
       padding: EdgeInsets.all(10),
       children: <Widget>[
-//        MyText(),
-//        MyImage()
+        MyText(),
         ListTile(
           leading: Image.network(
               "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2231427147,1514228057&fm=26&gp=0.jpg"),
@@ -137,33 +136,51 @@ class MyList extends StatelessWidget {
           trailing: Image.asset("images/jing.jpg"),
         ),
         Container(
-          width: 400,
-          height: 200,
+          height: 200.0,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: <Widget>[
               Container(
-                width: 200,
-                height: 200,
-                child: ListView(
-                  physics: NeverScrollableScrollPhysics(),
+                margin: EdgeInsets.all(15.0),
+                child: Row(
                   children: <Widget>[
                     Image.asset("images/jing.jpg"),
-                    Text('2019年12月22日 星期日'),
-                    Text(
-                      '天气晴',
-                      style: TextStyle(fontSize: 18.0),
-                    ),
-                    Text(
-                      '我想静静',
-                      style: TextStyle(fontSize: 18.0),
-                    ),
+                    SizedBox(width: 10,),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+
+                        Expanded(
+                          child: Container(
+                            child: Text('2019年12月22日 星期日'),
+                            color: Colors.pink,
+                            alignment: Alignment.center,
+                          ),
+                        ),
+                        Text(
+                          '天气晴',
+                          style: TextStyle(fontSize: 18.0),
+                        ),
+                        Expanded(
+                          child: Container(
+                            child: Text(
+                              '我想静静',
+                              style: TextStyle(fontSize: 18.0),
+                            ),
+                            alignment: Alignment.center,
+                            color: Colors.pinkAccent,
+                          ),
+                          flex: 2,
+                        )
+                      ],
+                    )
                   ],
                 ),
               ),
               Container(
                 width: 200,
                 height: 200,
+                margin: EdgeInsets.all(15.0),
                 child: ListView(
                   physics: NeverScrollableScrollPhysics(),
                   children: <Widget>[
@@ -184,45 +201,7 @@ class MyList extends StatelessWidget {
                   ],
                 ),
               ),
-              Container(
-                width: 200,
-                height: 200,
-                child: ListView(
-                  physics: NeverScrollableScrollPhysics(),
-                  children: <Widget>[
-                    Text('2019年12月22日 星期日'),
-                    Text(
-                      '天气晴',
-                      style: TextStyle(fontSize: 18.0),
-                    ),
-                    Text(
-                      '我想静静',
-                      style: TextStyle(fontSize: 18.0),
-                    ),
-                    Image.asset("images/jing.jpg"),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
-        Container(
-          width: 200,
-          height: 500,
-          child: ListView(
-            physics: NeverScrollableScrollPhysics(),
-            scrollDirection: Axis.vertical,
-            children: <Widget>[
-              Text('2019年12月22日 星期日'),
-              Text(
-                '天气晴',
-                style: TextStyle(fontSize: 18.0),
-              ),
-              Text(
-                '我想静静',
-                style: TextStyle(fontSize: 18.0),
-              ),
-              Image.asset("images/jing.jpg"),
+              MyImage(),
             ],
           ),
         ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_demo/main/home.dart';
-import 'package:flutter_web_demo/main/list.dart';
-import 'package:flutter_web_demo/main/mine.dart';
+import 'package:flutter_demo/main/home.dart';
+import 'package:flutter_demo/main/list.dart';
+import 'package:flutter_demo/main/mine.dart';
 
 class MainPage extends StatefulWidget {
   @override

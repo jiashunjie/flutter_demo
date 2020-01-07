@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web_demo/main.dart';
+import 'package:flutter_demo/main.dart';
 
 
 void main() => runApp(Splash());
