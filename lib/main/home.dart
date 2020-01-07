@@ -1,27 +1,18 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+class HomePage extends StatelessWidget {
+  HomePage({Key key, this.title}) : super(key: key);
+  final String title;
 
-class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Flutter Demo"),
-          brightness: Brightness.dark,
-        ),
-        body: HomeContent(),
-      ),
-      theme: ThemeData(primarySwatch: Colors.yellow),
-    );
+    return HomeContent();
   }
 }
 
 class HomeContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return MyList();
   }
 }
@@ -167,7 +158,6 @@ class MyList extends StatelessWidget {
                       '我想静静',
                       style: TextStyle(fontSize: 18.0),
                     ),
-
                   ],
                 ),
               ),
@@ -186,8 +176,11 @@ class MyList extends StatelessWidget {
                       '我想静静',
                       style: TextStyle(fontSize: 18.0),
                     ),
-                    Image.asset("images/jing.jpg",width: 100,
-                    height: 100,),
+                    Image.asset(
+                      "images/jing.jpg",
+                      width: 100,
+                      height: 100,
+                    ),
                   ],
                 ),
               ),
