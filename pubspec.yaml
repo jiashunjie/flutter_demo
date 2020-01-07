@@ -1,4 +1,4 @@
-name: flutter_demo
+name: flutter_web_demo
 description: A new Flutter application.
 
 # The following defines the version and build number for your application.
@@ -43,7 +43,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - images/jing.jpg
-#    - images/a_dot_ham.jpeg
+    - images/launch_image.jpg
+  #    - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

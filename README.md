@@ -1,4 +1,4 @@
-# flutter_demo
+# flutter_web_demo
 
 A new Flutter application.
 

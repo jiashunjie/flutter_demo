@@ -1,4 +1,4 @@
-package com.example.flutter_demo
+package com.example.flutter_web_demo
 
 import android.os.Bundle
 import io.flutter.app.FlutterActivity
